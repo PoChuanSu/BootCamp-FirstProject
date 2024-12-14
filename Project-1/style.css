@@ -72,6 +72,22 @@ ul {
     list-style: none;
 }
 
+.test {
+    background-color: black;
+    margin: 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 300px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.child {
+    background-color: red;
+    font-size: 30px;
+}
+
 /* Font style*/
 /* https://fonts.google.com/ */
 
