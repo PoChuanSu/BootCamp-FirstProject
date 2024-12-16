@@ -4,25 +4,38 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1500px;
+    /* background-color: orange; */
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
 body {
     color: #fafaf9;
     background-color: #292524;
     font-family: "Sono", sans-serif;
-    padding: 40px;
+    padding: 48px 64px;
+}
+
+.logo img {
+    width: 68px;
+    height: 68px;
 }
 
 h1 {
     font-size: 42px;
     text-transform: uppercase;
     font-family: "Coiny", sans-serif;
-    background-color: purple;
+    /* background-color: purple; */
     line-height: 1;
     margin-top: 6px;
 }
 
 .header {
     margin-bottom: 40px;
-    background-color: red;
+    /* background-color: red; */
     padding: 10px;
     display: flex;
     align-items: center;
@@ -30,7 +43,7 @@ h1 {
 }
 
 .logo {
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     align-items: center;
     gap: 16px;
