@@ -79,6 +79,8 @@ h1 {
     padding-top: 3px;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .vote-buttons {
@@ -124,6 +126,8 @@ ul {
     );
     /* button is not inherit from body by defailt, so... */
     color: inherit;
+    border-radius: 30px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
