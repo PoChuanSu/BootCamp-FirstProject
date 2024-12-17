@@ -13,38 +13,38 @@ btn.addEventListener("click", function () {
     }
 });
 
-let votesInteresting = 23;
-let votesMindblowing = 5;
-// const text = "Lisbon is the capital of Portugal";
+// let votesInteresting = 23;
+// let votesMindblowing = 5;
+// // const text = "Lisbon is the capital of Portugal";
 
-votesInteresting = votesInteresting + 1;
-votesInteresting++;
+// votesInteresting = votesInteresting + 1;
+// votesInteresting++;
 
-let votesFalse = 4;
-let totalUpvotes = votesInteresting + votesMindblowing;
+// let votesFalse = 4;
+// let totalUpvotes = votesInteresting + votesMindblowing;
 
-// Function Demo
-function calcFactAge(year) {
-    // const currentYear = 2024;
-    const currentYear = new Date().getFullYear();
-    const age = currentYear - year;
+// // Function Demo
+// function calcFactAge(year) {
+//     // const currentYear = 2024;
+//     const currentYear = new Date().getFullYear();
+//     const age = currentYear - year;
 
-    if (age >= 0) return age;
-    else
-        return `Impossible year. Year needs to be less or equal ${currentYear}`;
-}
+//     if (age >= 0) return age;
+//     else
+//         return `Impossible year. Year needs to be less or equal ${currentYear}`;
+// }
 
-const age1 = calcFactAge(2015);
-console.log(age1);
-console.log(calcFactAge(2037));
+// const age1 = calcFactAge(2015);
+// console.log(age1);
+// console.log(calcFactAge(2037));
 
-const calcFactAge2 = (year) =>
-    year <= new Date().getFullYear()
-        ? new Date().getFullYear() - year
-        : `Impossible year. Year needs to be less or equal ${new Date().getFullYear()}`;
+// const calcFactAge2 = (year) =>
+//     year <= new Date().getFullYear()
+//         ? new Date().getFullYear() - year
+//         : `Impossible year. Year needs to be less or equal ${new Date().getFullYear()}`;
 
-console.log(calcFactAge2(2015));
-console.log(calcFactAge2(2037));
+// console.log(calcFactAge2(2015));
+// console.log(calcFactAge2(2037));
 
 // if (votesInteresting === votesMindblowing) {
 //     alert("This is the first if / else statement");
@@ -73,3 +73,24 @@ console.log(calcFactAge2(2037));
 // }`;
 
 // console.log(str);
+
+const fact = ["Lisbon is the capital of Portugal", 2015, true];
+console.log(fact);
+console.log(fact.length);
+console.log(fact[fact.length - 1]);
+
+const [text, createdIn, isCorrect] = fact;
+console.log(text);
+
+const newFact = [...fact, "society"];
+console.log(newFact);
+
+let society = newFact.at(3);
+console.log(society);
+
+newFact.push("push 1 element");
+console.log(newFact);
+
+let popElement = newFact.pop();
+console.log(popElement);
+console.log(newFact);
