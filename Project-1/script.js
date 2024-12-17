@@ -13,28 +13,15 @@ btn.addEventListener("click", function () {
     }
 });
 
-// Variable Demo
 let votesInteresting = 23;
 let votesMindblowing = 5;
-const text = "Lisbon is the capital of Portugal";
+// const text = "Lisbon is the capital of Portugal";
 
 votesInteresting = votesInteresting + 1;
 votesInteresting++;
-// console.log(votesInteresting);
 
 let votesFalse = 4;
 let totalUpvotes = votesInteresting + votesMindblowing;
-
-const message =
-    totalUpvotes > votesFalse
-        ? "The fact is true"
-        : "Might be false, check more sources ...";
-
-// alert(message);
-
-// console.log("Upvotes:", votesInteresting);
-
-const isCorrect = votesFalse < totalUpvotes;
 
 // Function Demo
 function calcFactAge(year) {
@@ -43,7 +30,8 @@ function calcFactAge(year) {
     const age = currentYear - year;
 
     if (age >= 0) return age;
-    else return "Impossible year";
+    else
+        return `Impossible year. Year needs to be less or equal ${currentYear}`;
 }
 
 const age1 = calcFactAge(2015);
@@ -65,3 +53,15 @@ if (votesMindblowing) {
 } else {
     console.log("Not so special...");
 }
+
+const text = "Lisbon is the capital of Portugal";
+const upperText = text.toUpperCase();
+console.log(upperText);
+
+const str = `The current fact is ${text}. It is ${calcFactAge(
+    2015
+)} years old. It is probably ${
+    totalUpvotes > votesFalse ? "correct" : "not ture"
+}`;
+
+console.log(str);
