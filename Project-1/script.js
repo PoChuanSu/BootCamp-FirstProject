@@ -13,7 +13,6 @@ btn.addEventListener("click", function () {
     }
 });
 
-/*
 // Variable Demo
 let votesInteresting = 23;
 let votesMindblowing = 5;
@@ -30,16 +29,32 @@ let totalUpvotes = votesInteresting + votesMindblowing;
 let votesFalse = 4;
 const isCorrect = votesFalse < totalUpvotes;
 
-
 // Function Demo
 function calcFactAge(year) {
     // const currentYear = 2024;
     const currentYear = new Date().getFullYear();
     const age = currentYear - year;
-    return age;
+
+    if (age >= 0) return age;
+    else return "Impossible year";
 }
 
 const age1 = calcFactAge(2015);
 console.log(age1);
-console.log(calcFactAge(2022));
-*/
+console.log(calcFactAge(2037));
+
+if (votesInteresting === votesMindblowing) {
+    alert("This is the first if / else statement");
+} else if (votesInteresting > votesMindblowing) {
+    console.log("Interesting fact!");
+} else if (votesInteresting < votesMindblowing) {
+    console.log("Mindblowing fact!");
+}
+
+//falsy value: 0, '', null, undefined
+// truthy value: everything else;
+if (votesMindblowing) {
+    console.log("Mindblowing fact!");
+} else {
+    console.log("Not so special...");
+}
