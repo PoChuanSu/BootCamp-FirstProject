@@ -13,18 +13,33 @@ btn.addEventListener("click", function () {
     }
 });
 
+/*
+// Variable Demo
 let votesInteresting = 23;
 let votesMindblowing = 5;
 const text = "Lisbon is the capital of Portugal";
 
 votesInteresting = votesInteresting + 1;
 votesInteresting++;
-console.log(votesInteresting);
+// console.log(votesInteresting);
 
 let totalUpvotes = votesInteresting + votesMindblowing;
 
-console.log("Upvotes:", votesInteresting);
+// console.log("Upvotes:", votesInteresting);
 
 let votesFalse = 4;
 const isCorrect = votesFalse < totalUpvotes;
-console.log(isCorrect);
+
+
+// Function Demo
+function calcFactAge(year) {
+    // const currentYear = 2024;
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - year;
+    return age;
+}
+
+const age1 = calcFactAge(2015);
+console.log(age1);
+console.log(calcFactAge(2022));
+*/
