@@ -22,11 +22,18 @@ votesInteresting = votesInteresting + 1;
 votesInteresting++;
 // console.log(votesInteresting);
 
+let votesFalse = 4;
 let totalUpvotes = votesInteresting + votesMindblowing;
+
+const message =
+    totalUpvotes > votesFalse
+        ? "The fact is true"
+        : "Might be false, check more sources ...";
+
+// alert(message);
 
 // console.log("Upvotes:", votesInteresting);
 
-let votesFalse = 4;
 const isCorrect = votesFalse < totalUpvotes;
 
 // Function Demo
