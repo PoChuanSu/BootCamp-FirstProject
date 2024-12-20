@@ -1,3 +1,7 @@
+// Filter demo
+console.log([7, 64, 6, -23, 11].filter((el) => el > 10));
+console.log([7, 64, 6, -23, 11].find((el) => el > 10));
+
 const initialFacts = [
     {
         id: 1,
@@ -42,6 +46,8 @@ const CATEGORIES = [
     { name: "news", color: "#8b5cf6" },
 ];
 
+console.log(CATEGORIES.find((cat) => cat.name === "society").color);
+
 const btn = document.querySelector(".btn-open");
 const form = document.querySelector(".fact-form");
 const factsList = document.querySelector(".facts-list");
@@ -75,6 +81,8 @@ async function loadFacts() {
 
     const data = await res.json();
     // console.log(data);
+
+    // const filteredData = data.filter((fact) => fact.category === "society");
     createFactsList(data);
 }
 
@@ -121,7 +129,11 @@ function createFactsList(dataArray) {
                 target="_blank"
                 >(Source)</a>
         </p>
-        <span class="tag" style="background-color: #3b82f6">${fact.category}</span>
+        <span class="tag" style="background-color:${
+            CATEGORIES.find((cat) => cat.name === fact.category).color
+        }">
+            ${fact.category}
+        </span>
         <div class="vote-buttons">
             <button>👍 24</button>
             <button>🤯 9</button>
@@ -135,7 +147,7 @@ function createFactsList(dataArray) {
 }
 
 // Can see the DOM properties
-console.dir(btn);
+// console.dir(btn);
 
 btn.addEventListener("click", function () {
     if (form.classList.contains("hidden")) {
