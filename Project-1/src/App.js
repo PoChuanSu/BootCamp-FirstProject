@@ -36,39 +36,9 @@ const initialFacts = [
 
 // LINK TO APP SAMPLE DATA: https://docs.google.com/spreadsheets/d/1eeldcA_OwP4DHYEvjG0kDe0cRys-cDPhc_E9P9G1e3I/edit#gid=0
 
-// 👍 🤯 ⛔️
-
-function Counter() {
-    const [count, setCount] = useState(0);
-    console.log("rendering...");
-
-    return (
-        <div>
-            <span style={{ fontSize: "40px" }}>{count}</span>
-            <button
-                className="btn btn-large"
-                onClick={() => {
-                    setCount((c) => c + 1);
-                    setCount((c) => c + 1);
-                }}
-            >
-                +1
-            </button>
-
-            <button
-                className="btn btn-large"
-                onClick={() => {
-                    setCount(count + 1);
-                    setCount(count + 1);
-                }}
-            >
-                +1
-            </button>
-        </div>
-    );
-}
-
 function App() {
+    // 1. define state variable
+    const [showForm, setShowForm] = useState(false);
     const appTitle = "Today I Learned";
 
     return (
@@ -84,10 +54,17 @@ function App() {
                     />
                     <h1>{appTitle}</h1>
                 </div>
-                <button className="btn btn-large btn-open">Share a fact</button>
+                <button
+                    className="btn btn-large btn-open"
+                    // 3. Update state variable
+                    onClick={() => setShowForm((show) => !show)}
+                >
+                    Share a fact
+                </button>
             </header>
-            <Counter />
-            <NewFactForm />
+
+            {/* 2. Use state variable */}
+            {showForm ? <NewFactForm /> : null}
 
             <main className="main">
                 <CategoryFilter />
