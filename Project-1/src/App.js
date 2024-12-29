@@ -39,29 +39,10 @@ const initialFacts = [
 function App() {
     // 1. define state variable
     const [showForm, setShowForm] = useState(false);
-    const appTitle = "Today I Learned";
 
     return (
         <>
-            {/* HEADER */}
-            <header className="header">
-                <div className="logo">
-                    <img
-                        src="logo.png"
-                        height="68"
-                        width="68"
-                        alt="Today I Learned Logo"
-                    />
-                    <h1>{appTitle}</h1>
-                </div>
-                <button
-                    className="btn btn-large btn-open"
-                    // 3. Update state variable
-                    onClick={() => setShowForm((show) => !show)}
-                >
-                    Share a fact
-                </button>
-            </header>
+            <Header showForm={showForm} setShowForm={setShowForm} />
 
             {/* 2. Use state variable */}
             {showForm ? <NewFactForm /> : null}
@@ -74,8 +55,70 @@ function App() {
     );
 }
 
+function Header({ showForm, setShowForm }) {
+    const appTitle = "Today I Learned";
+
+    return (
+        <header className="header">
+            <div className="logo">
+                <img
+                    src="logo.png"
+                    height="68"
+                    width="68"
+                    alt="Today I Learned Logo"
+                />
+                <h1>{appTitle}</h1>
+            </div>
+            <button
+                className="btn btn-large btn-open"
+                onClick={() => setShowForm((show) => !show)}
+            >
+                {showForm ? "Close" : "Share a fact"}
+            </button>
+        </header>
+    );
+}
+
 function NewFactForm() {
-    return <form className="fact-form">Fact form</form>;
+    const [text, setText] = useState("");
+    const [source, setSource] = useState("");
+    const [category, setCategory] = useState("");
+    const textLength = text.length;
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(text, source, category);
+    }
+
+    return (
+        <form className="fact-form" onSubmit={handleSubmit}>
+            <input
+                type="text"
+                placeholder="Share a fact with the world..."
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+            />
+            <span>{200 - textLength}</span>
+            <input
+                type="text"
+                placeholder="Trustworthy source..."
+                value={source}
+                onChange={(e) => setSource(e.target.value)}
+            />
+            <select
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+            >
+                <option value="">Choose category</option>
+                {CATEGORIES.map((cat) => (
+                    <option key={cat.name} value={cat.name}>
+                        {cat.name.toUpperCase()}
+                    </option>
+                ))}
+            </select>
+            <button className="btn btn-large">Post</button>
+        </form>
+    );
 }
 
 const CATEGORIES = [
