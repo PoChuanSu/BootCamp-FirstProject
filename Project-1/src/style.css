@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container {
+#root {
     max-width: 1500px;
     /* background-color: orange; */
     margin: 0 auto;
