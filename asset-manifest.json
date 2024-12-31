@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PoChuanSu.github.io/BootCamp-FirstProject/static/css/main.ee7bfc72.css",
-    "main.js": "/PoChuanSu.github.io/BootCamp-FirstProject/static/js/main.307cfd01.js",
-    "static/js/952.8fa202e8.chunk.js": "/PoChuanSu.github.io/BootCamp-FirstProject/static/js/952.8fa202e8.chunk.js",
-    "index.html": "/PoChuanSu.github.io/BootCamp-FirstProject/index.html",
-    "main.ee7bfc72.css.map": "/PoChuanSu.github.io/BootCamp-FirstProject/static/css/main.ee7bfc72.css.map",
-    "main.307cfd01.js.map": "/PoChuanSu.github.io/BootCamp-FirstProject/static/js/main.307cfd01.js.map",
-    "952.8fa202e8.chunk.js.map": "/PoChuanSu.github.io/BootCamp-FirstProject/static/js/952.8fa202e8.chunk.js.map"
+    "main.css": "/BootCamp-FirstProject/static/css/main.ee7bfc72.css",
+    "main.js": "/BootCamp-FirstProject/static/js/main.751d3119.js",
+    "static/js/952.8fa202e8.chunk.js": "/BootCamp-FirstProject/static/js/952.8fa202e8.chunk.js",
+    "index.html": "/BootCamp-FirstProject/index.html",
+    "main.ee7bfc72.css.map": "/BootCamp-FirstProject/static/css/main.ee7bfc72.css.map",
+    "main.751d3119.js.map": "/BootCamp-FirstProject/static/js/main.751d3119.js.map",
+    "952.8fa202e8.chunk.js.map": "/BootCamp-FirstProject/static/js/952.8fa202e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee7bfc72.css",
-    "static/js/main.307cfd01.js"
+    "static/js/main.751d3119.js"
   ]
 }
