@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PoChuanSu.github.io/BootCamp-Preparation/static/css/main.ee7bfc72.css",
+    "main.js": "/PoChuanSu.github.io/BootCamp-Preparation/static/js/main.7406f610.js",
+    "static/js/952.8fa202e8.chunk.js": "/PoChuanSu.github.io/BootCamp-Preparation/static/js/952.8fa202e8.chunk.js",
+    "index.html": "/PoChuanSu.github.io/BootCamp-Preparation/index.html",
+    "main.ee7bfc72.css.map": "/PoChuanSu.github.io/BootCamp-Preparation/static/css/main.ee7bfc72.css.map",
+    "main.7406f610.js.map": "/PoChuanSu.github.io/BootCamp-Preparation/static/js/main.7406f610.js.map",
+    "952.8fa202e8.chunk.js.map": "/PoChuanSu.github.io/BootCamp-Preparation/static/js/952.8fa202e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee7bfc72.css",
+    "static/js/main.7406f610.js"
+  ]
+}
