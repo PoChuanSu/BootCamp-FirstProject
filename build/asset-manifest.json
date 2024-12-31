@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/BootCamp-FirstProject/static/css/main.ee7bfc72.css",
+    "main.js": "/BootCamp-FirstProject/static/js/main.bb4cbaa6.js",
+    "static/js/952.8fa202e8.chunk.js": "/BootCamp-FirstProject/static/js/952.8fa202e8.chunk.js",
+    "static/media/logo.png": "/BootCamp-FirstProject/static/media/logo.93be590b485e2b0a79cd.png",
+    "index.html": "/BootCamp-FirstProject/index.html",
+    "main.ee7bfc72.css.map": "/BootCamp-FirstProject/static/css/main.ee7bfc72.css.map",
+    "main.bb4cbaa6.js.map": "/BootCamp-FirstProject/static/js/main.bb4cbaa6.js.map",
+    "952.8fa202e8.chunk.js.map": "/BootCamp-FirstProject/static/js/952.8fa202e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee7bfc72.css",
+    "static/js/main.bb4cbaa6.js"
+  ]
+}

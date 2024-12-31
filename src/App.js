@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import supabase from "./superbase";
 import "./style.css";
+import logo from "./logo.png";
 // LINK TO APP SAMPLE DATA: https://docs.google.com/spreadsheets/d/1eeldcA_OwP4DHYEvjG0kDe0cRys-cDPhc_E9P9G1e3I/edit#gid=0
 
 function App() {
@@ -65,7 +66,7 @@ function Header({ showForm, setShowForm }) {
         <header className="header">
             <div className="logo">
                 <img
-                    src="logo.png"
+                    src={logo}
                     height="68"
                     width="68"
                     alt="Today I Learned Logo"
